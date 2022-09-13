@@ -25,6 +25,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           git clone https://github.com/kdrag0n/proton-clang.git
+          tar_path=$(pwd)
           sudo tar -zvcf /home/runner/clang.tar.gz $tar_path/proton-clang
           
       - name: Save in artifact
